@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-info">
+        <div id="mine-counter">Mines left: <span id="mines-left"></span></div>
+        <div id="stopwatch">Time: <span id="timer">0</span> sec</div>
+        <button id="restart-button" style="display: none;">Restart</button>
+    </div>
+    <div id="game-container">
+        <div id="minesweeper"></div>
+        <div id="player-info">
+            <label for="player-name">Player Name:</label>
+            <input type="text" id="player-name">
+            <button id="submit-name">Submit</button>
+            <div id="records">
+                <h3>Records</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time (sec)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="record-table">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

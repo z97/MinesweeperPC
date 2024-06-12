@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+#mine-counter, #stopwatch {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+#minesweeper {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 2px;
+    margin-right: 20px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cell.mine {
+    background-color: red;
+}
+
+.cell.number {
+    background-color: #eee;
+}
+
+.hidden {
+    background-color: #bbb;
+    border-color: #aaa;
+}
+
+#player-info {
+    text-align: center;
+}
+
+#player-info label {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+#player-info input {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#player-info button {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#records {
+    margin-top: 20px;
+}
+
+#records table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#records th, #records td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#records th {
+    background-color: #eee;
+}
